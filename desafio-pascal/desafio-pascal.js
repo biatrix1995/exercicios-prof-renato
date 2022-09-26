@@ -12,7 +12,6 @@ for(let i = 1; i <=6; i++) {
     const n = parseInt(prompt(`Digite o ${i} número!`))
     num.push(n)
 }
-
 //separar os pares ímpares
 
 const pares = []
@@ -25,6 +24,7 @@ for (let numero of num){
     /*
     Separar os valores pares dos ímpares
     colocando cada valor em seu respectivo array*/
+    /* O valor que você declara á esquerda do of em = "for( let x of y){}" é a variável que armazena os valores da lista.*/
 
     if(numero % 2 == 0){
         pares.push(numero)
