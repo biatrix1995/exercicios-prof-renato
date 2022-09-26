@@ -1,0 +1,55 @@
+<!--
+    Crie um programa que pergunte quantos produtos um cliente pegou e depois peça para que ele informe
+o preço de cada produto. Ao recuperar possuir o valor de cada produto, faça a soma total da compra e
+informe o maior e o menor preço que foi informado
+//recuperar a quantidade de produtos
+        //ler o preço de cada produto e armazenar em um array
+        //a variável i representa a quantatidade de vezes que o looping vai executar e a posição que a variavel precoProduto vai guardar os valores
+        //agora precisamos fazer a soma dos arrays
+        //quero que o meu looping execute enquanto tiver valores dentro do meu array
+        //a variável length acessa a quantidades de valores que existem dentro do meu array
+        // todas as vezes que queremos percorrer todas as quantidades dentro do array, eu uso o length
+        //for(let i = 0; i < precoProdutos.length; i++){
+          //*  const valor = precoProdutos[i]
+          //  soma = soma + valor//*
+        // quando eu quero fazer com que uma variável receba ela mesma, utilizar +=, então ficaria soma += valor    
+        //}*//
+        //para cada loop do for, o valor de 'preco' vai receber o valor de cada posição do array
+        // para informar o maior e o menor preço informado
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const qtsProdutos = parseInt(prompt('Informe a quantidade de produtos!'))
+        const precoProdutos = []
+        for(let i = 0; i < qtsProdutos; i++){
+            let preco = parseFloat(prompt('Informe o valor do produto!' + (i + 1)))
+            precoProdutos[i] = preco
+            console.log(precoProdutos)
+        }
+        let soma = 0
+        for (let preco of precoProdutos){
+            soma += preco
+        }
+        alert (`O preço final a pagar é de ${soma}`)
+        let valorMin = 0
+        let valorMax = 0
+        for (let preco of precoProdutos){
+                let valorMin = (precoProdutos*Number.MIN_VALUE)
+                alert(`O produto com menor preço, custou ${valorMin}!`)
+        }
+        for (let preco of precoProdutos){
+                let valorMax = (precoProdutos*Number.MAX_VALUE)
+                alert(`E produto com maior preço, custou ${valorMax}!`)
+        } 
+    </script>
+</body>
+</html>
