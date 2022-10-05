@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script >
+
+    /* 4. Escreva um programa que leia uma letra e mostre se ela é vogal ou consoante
+
+    A)Escreva um programa que leia uma letra
+    b)e mostre se ela é vogal ou consoante
+
+    */
+
+let letra = prompt(`Olá! Digite uma letra, por favor!`) /* aqui eu boto em uma variável porque é só quero guardar uma coisa */
+let vogal = ['A','E','I','O','U'] /*  aqui eu boto na [] porque quero guardar várias coisas*/
+
+if (vogal.includes(letra.toUpperCase)) {
+    alert(`Você digitou uma vogal!`)
+} else {
+    alert(`Você digitou uma consoante!`)
+}
+
+</script>
+</body>
+</html>
